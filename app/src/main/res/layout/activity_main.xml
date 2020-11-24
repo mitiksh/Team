@@ -73,10 +73,11 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <ProgressBar
+            android:layout_margin="5dp"
             android:id="@+id/progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword" />
@@ -91,7 +92,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/progress"
-            android:onClick="onLogin"
+
             />
 
         <TextView
@@ -104,19 +105,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
-            tools:targetApi="jelly_bean" />
+            android:onClick="signup"
+
+
+         />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ProgressBar
-        android:id="@+id/progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="495dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
