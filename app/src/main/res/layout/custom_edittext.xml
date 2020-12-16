@@ -1,0 +1,22 @@
+<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_margin="8dp"
+    >
+    <EditText
+        android:id="@+id/memberId"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="9"
+    />
+    <ImageButton
+        android:id="@+id/delMember"
+        android:layout_marginLeft="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_delete"
+        android:layout_weight="1"
+        android:background="#00051851"
+        />
+
+</LinearLayout>
